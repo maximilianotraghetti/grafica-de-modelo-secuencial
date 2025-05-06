@@ -82,9 +82,8 @@
         crearModelo();
 
         const xs = tf.tensor1d([1, 2, 3, 4, 5]);
-        const ys = tf.tensor1d([3, 6, 9, 12, 15]); // Relación lineal y = 3x
-
-        datosPerdida = []; // Reiniciar
+        const ys = tf.tensor1d([3, 6, 9, 12, 15]);
+        datosPerdida = [];
 
         await modelo.fit(xs, ys, {
           epochs: 100,
