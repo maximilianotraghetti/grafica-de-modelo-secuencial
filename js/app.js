@@ -12,7 +12,7 @@ async function entrenarModelo() {
   crearModelo();
 
   const xs = tf.tensor1d([1, 2, 3, 4, 5]);
-  const ys = tf.tensor1d([3, 6, 9, 12, 15]); // y = 3x
+  const ys = tf.tensor1d([3, 6, 9, 12, 15]);
 
   datosPerdida = [];
 
